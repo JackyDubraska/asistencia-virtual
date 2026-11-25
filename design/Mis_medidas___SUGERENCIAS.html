@@ -1,0 +1,440 @@
+<!DOCTYPE html><html lang="es"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis medidas — SUGERENCIAS</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="d268df57401bdf57===../../tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'pastel-lila': '#FFEDD5',
+        'pastel-menta': '#CCFBF1',
+        'pastel-durazno': '#FED7AA',
+        'pastel-amarillo': '#FEF3C7',
+        'pastel-rosa': '#E8EEF6',
+        'morado-tecnologico': '#9A3412',
+        'turquesa-confianza': '#0F766E',
+        'naranja': '#EA580C',
+        'blanco-lavanda': '#FAF9F7',
+        'success': '#0F766E',
+        'warning': '#92400E',
+        'light-primary': '#C2410C',
+        'light-on-primary': '#FFFFFF',
+        'light-primary-container': '#FFEDD5',
+        'light-on-primary-container': '#431407',
+        'light-secondary': '#0F766E',
+        'light-on-secondary': '#FFFFFF',
+        'light-secondary-container': '#CCFBF1',
+        'light-on-secondary-container': '#042F2E',
+        'light-tertiary': '#92400E',
+        'light-on-tertiary': '#FFFFFF',
+        'light-tertiary-container': '#FEF3C7',
+        'light-on-tertiary-container': '#451A03',
+        'light-error': '#BA1A1A',
+        'light-on-error': '#FFFFFF',
+        'light-error-container': '#FFDAD6',
+        'light-on-error-container': '#410002',
+        'light-background': '#FAF9F7',
+        'light-on-background': '#1C1B1A',
+        'light-surface': '#FAF9F7',
+        'light-surface-dim': '#E8E5E1',
+        'light-surface-bright': '#FFFFFF',
+        'light-surface-container-lowest': '#FFFFFF',
+        'light-surface-container-low': '#F4F2EE',
+        'light-surface-container': '#EDF6F4',
+        'light-surface-container-high': '#F9F3E8',
+        'light-surface-container-highest': '#FFF7ED',
+        'light-on-surface': '#1C1B1A',
+        'light-surface-variant': '#FFEDD5',
+        'light-on-surface-variant': '#504D4A',
+        'light-outline': '#7A7672',
+        'light-outline-variant': '#E2E0DD',
+        'light-inverse-surface': '#31302E',
+        'light-inverse-on-surface': '#F4F2EE',
+        'light-inverse-primary': '#FDBA74',
+        'dark-primary': '#FFB599',
+        'dark-on-primary': '#5A1C00',
+        'dark-primary-container': '#F66018',
+        'dark-on-primary-container': '#401100',
+        'dark-secondary': '#80D5CB',
+        'dark-on-secondary': '#003733',
+        'dark-secondary-container': '#007068',
+        'dark-on-secondary-container': '#9AF0E5',
+        'dark-tertiary': '#FFB77D',
+        'dark-on-tertiary': '#4D2600',
+        'dark-tertiary-container': '#D97707',
+        'dark-on-tertiary-container': '#361900',
+        'dark-error': '#FFB4AB',
+        'dark-on-error': '#690005',
+        'dark-error-container': '#93000A',
+        'dark-on-error-container': '#FFDAD6',
+        'dark-background': '#17130F',
+        'dark-on-background': '#EAE1DA',
+        'dark-surface': '#17130F',
+        'dark-surface-dim': '#17130F',
+        'dark-surface-bright': '#3E3834',
+        'dark-surface-container-lowest': '#110D0A',
+        'dark-surface-container-low': '#1F1B17',
+        'dark-surface-container': '#231F1B',
+        'dark-surface-container-high': '#2E2925',
+        'dark-surface-container-highest': '#393430',
+        'dark-on-surface': '#EAE1DA',
+        'dark-surface-variant': '#5A4138',
+        'dark-on-surface-variant': '#E2BFB2',
+        'dark-outline': '#A98A7E',
+        'dark-outline-variant': '#5A4138',
+        'dark-inverse-surface': '#EAE1DA',
+        'dark-inverse-on-surface': '#342F2B',
+        'dark-inverse-primary': '#A73A00',
+      },
+      borderRadius: {
+        'sm': '8px',
+        'DEFAULT': '12px',
+        'md': '16px',
+        'lg': '20px',
+        'xl': '28px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section': '48px',
+        'page-margin': '24px',
+      },
+      fontFamily: {
+        'display': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'headline': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'title': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'body': ['"Rubik"', 'sans-serif'],
+        'label': ['"Rubik"', 'sans-serif'],
+        'mono': ['"Spline Sans Mono"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['44px', { lineHeight: '52px', letterSpacing: '-0.75px', fontWeight: '800' }],
+        'display-lg-mobile': ['30px', { lineHeight: '38px', letterSpacing: '-0.5px', fontWeight: '800' }],
+        'headline-lg': ['32px', { lineHeight: '40px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-md': ['24px', { lineHeight: '32px', letterSpacing: '-0.15px', fontWeight: '700' }],
+        'title-lg': ['20px', { lineHeight: '28px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '24px', letterSpacing: '0.1px', fontWeight: '600' }],
+        'body-lg': ['16px', { lineHeight: '24px', letterSpacing: '0.1px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '21px', letterSpacing: '0.15px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.1px', fontWeight: '500' }],
+        'label-sm': ['12px', { lineHeight: '16px', letterSpacing: '0.2px', fontWeight: '500' }],
+        'mono-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'state-change': '150ms',
+        'surface-enter': '250ms',
+        'surface-exit': '180ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'surface-exit': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'surface-exit': 'cubic-bezier(0.3, 0, 1, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Rubik:wght@400;500&amp;family=Spline+Sans+Mono:wght@500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>
+    .material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons {
+      display: inline-block; width: 1em; height: 1em; line-height: 1 !important;
+      box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle;
+    }
+  </style>
+</head>
+<body class="bg-light-surface text-light-on-surface font-body antialiased">
+  <div class="min-h-screen flex flex-col">
+
+    <!-- Shared App Header (Shell Parity with Inicio) -->
+    <header class="sticky top-0 z-30 bg-light-surface-container-lowest border-b border-light-outline-variant">
+      <div class="max-w-[1280px] mx-auto px-6 py-3 flex items-center justify-between gap-4">
+        <a href="#inicio" class="flex items-center gap-3 shrink-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-light-primary rounded-md">
+          <div class="w-11 h-11 rounded-md bg-pastel-lila text-light-on-primary-container flex items-center justify-center relative shrink-0 border border-light-outline-variant">
+            <span class="material-symbols-outlined text-[24px]" aria-hidden="true">shopping_bag</span>
+            <span class="material-symbols-outlined text-[14px] text-light-primary absolute top-1 right-1" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">auto_awesome</span>
+          </div>
+          <div class="flex flex-col shrink-0">
+            <span class="font-headline text-title-md text-light-on-surface tracking-tight" data-design-text-token="title-md">SUGERENCIAS</span>
+            <span class="font-label text-label-sm text-light-on-surface-variant" data-design-text-token="label-sm">Asistente de compras</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navegación principal" class="hidden lg:flex items-center gap-1 shrink-0">
+          <a href="#inicio" class="min-h-[44px] px-3.5 rounded-full text-light-on-surface-variant hover:bg-light-surface-container-low font-label text-label-lg inline-flex items-center shrink-0 transition-colors duration-state-change" data-design-text-token="label-lg">Inicio</a>
+          <a href="#asistente" class="min-h-[44px] px-3.5 rounded-full text-light-on-surface-variant hover:bg-light-surface-container-low font-label text-label-lg inline-flex items-center shrink-0 transition-colors duration-state-change" data-design-text-token="label-lg">LUMI</a>
+          <a href="#sugerencias" class="min-h-[44px] px-3.5 rounded-full text-light-on-surface-variant hover:bg-light-surface-container-low font-label text-label-lg inline-flex items-center shrink-0 transition-colors duration-state-change" data-design-text-token="label-lg">Sugerencias</a>
+          <a href="#tendencias" class="min-h-[44px] px-3.5 rounded-full text-light-on-surface-variant hover:bg-light-surface-container-low font-label text-label-lg inline-flex items-center shrink-0 transition-colors duration-state-change" data-design-text-token="label-lg">Tendencias</a>
+          <a href="#medidas" aria-current="page" class="min-h-[44px] px-3.5 rounded-full bg-pastel-lila text-light-on-primary-container font-label text-label-lg inline-flex items-center shrink-0" data-design-text-token="label-lg">Medidas</a>
+          <a href="#lista" class="min-h-[44px] px-3.5 rounded-full text-light-on-surface-variant hover:bg-light-surface-container-low font-label text-label-lg inline-flex items-center shrink-0 transition-colors duration-state-change" data-design-text-token="label-lg">Lista</a>
+        </nav>
+
+        <div class="flex items-center gap-2 shrink-0">
+          <div class="flex items-center bg-light-surface-container-low border border-light-outline-variant rounded-full p-1 shrink-0" role="group" aria-label="Selector de idioma">
+            <button type="button" data-lang="ES" class="lang-btn min-h-[36px] px-2.5 rounded-full bg-light-surface-container-lowest text-light-primary font-label text-label-sm shadow-sm cursor-pointer">ES</button>
+            <button type="button" data-lang="EN" class="lang-btn min-h-[36px] px-2.5 rounded-full text-light-on-surface-variant hover:text-light-on-surface font-label text-label-sm cursor-pointer">EN</button>
+            <button type="button" data-lang="FR" class="lang-btn min-h-[36px] px-2.5 rounded-full text-light-on-surface-variant hover:text-light-on-surface font-label text-label-sm cursor-pointer">FR</button>
+            <button type="button" data-lang="PT" class="lang-btn min-h-[36px] px-2.5 rounded-full text-light-on-surface-variant hover:text-light-on-surface font-label text-label-sm cursor-pointer">PT</button>
+          </div>
+
+          <button type="button" aria-label="Notificaciones (3 nuevas)" class="w-11 h-11 rounded-full bg-pastel-amarillo text-light-on-tertiary-container hover:opacity-90 inline-flex items-center justify-center relative shrink-0 cursor-pointer">
+            <span class="material-symbols-outlined text-[22px]" aria-hidden="true">notifications</span>
+            <span class="w-2.5 h-2.5 rounded-full bg-light-primary absolute top-2.5 right-2.5" aria-hidden="true"></span>
+          </button>
+
+          <!-- COMPONENT: button-with-icon -->
+          <button data-component-id="button-with-icon" data-component-type="button" data-component-variant="with-icon" type="button" class="min-h-[44px] px-5 py-2.5 rounded-full bg-pastel-menta text-light-on-secondary-container border border-light-secondary hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light-secondary transition-opacity duration-state-change ease-state-change inline-flex items-center justify-center gap-2 shrink-0 cursor-pointer">
+            <span class="material-symbols-outlined text-[20px]" aria-hidden="true">mic</span>
+            <span class="font-label text-label-lg" data-design-text-token="label-lg">Voz LUMI</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 max-w-[1280px] w-full mx-auto px-6 py-8 flex flex-col gap-8">
+
+      <!-- Page Header + LUMI Assistant Guidance -->
+      <section aria-labelledby="medidas-title" class="rounded-xl bg-gradient-to-r from-pastel-durazno/40 via-pastel-rosa/35 to-pastel-menta/45 border border-light-outline-variant p-6 lg:p-8 grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+        <div class="lg:col-span-8 flex flex-col gap-3">
+          <div class="inline-flex items-center gap-2 self-start px-3.5 py-1 rounded-full bg-pastel-amarillo text-light-on-tertiary-container">
+            <span class="material-symbols-outlined text-[18px]" aria-hidden="true">straighten</span>
+            <span class="font-label text-label-sm" data-design-text-token="label-sm">Mis medidas y tallas personales</span>
+          </div>
+          <h1 id="medidas-title" class="font-display text-display-lg-mobile lg:text-display-lg text-light-on-surface text-balance" data-design-text-token="display-lg">Tus tallas exactas en un solo lugar</h1>
+          <p class="font-body text-body-lg text-light-on-surface-variant max-w-prose text-pretty" data-design-text-token="body-lg">
+            Registra tus medidas una sola vez. LUMI las usa para recomendarte ropa y calzado que se ajusten mejor a ti, sin importar el país o la tienda.
+          </p>
+        </div>
+
+        <div class="lg:col-span-4 flex items-center gap-4 bg-light-surface-container-lowest/90 border border-light-outline-variant rounded-xl p-4">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrBPQmIW5YDOytjZFxaJGbdTUjvQ3c8ZtaqR6qCTjlxzt5uq-Dsw3U7nD-LOFH-ixo9sUguYU2URoJGPWstWcsRl9QRjwP-o6Cu-DpFKFMAwp7dN0tT-5o6lAXDQZdTMGrj6JgQlecOeJgAzZXkXFo7DTOMz_Q4r6DJq8y4eU6soV_6kaCbAcEw14zpmBDyIZITW2uF2bmWTKpVnGcoFjpcaRWtwT1TlTP_uDSlDYW0MjqVKLSdzSqMAUyIInuUroIxz0yl-YA" alt="LUMI explicando cómo usar tus medidas" class="h-28 w-auto object-contain shrink-0" data-stitch-original-src="d3f6997909ad5a42===../../images/lumi_assistant_transparent.png">
+          <div class="flex flex-col gap-1.5">
+            <span class="font-title text-title-md text-light-on-surface" data-design-text-token="title-md">LUMI te ayuda</span>
+            <p class="font-body text-body-md text-light-on-surface-variant text-pretty" data-design-text-token="body-md">&#34;Puedes dictarme tus medidas por voz o usar el conversor US, EU y UK aquí abajo.&#34;</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Forms & Size Converter Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+
+        <!-- Left 7 cols: Ropa & Calzado Forms -->
+        <form id="medidas-form" class="lg:col-span-7 flex flex-col gap-6">
+          <!-- Ropa Section -->
+          <section aria-labelledby="ropa-title" class="rounded-xl bg-light-surface-container-lowest border border-light-outline-variant p-6 shadow-sm flex flex-col gap-5">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2.5">
+                <span class="w-10 h-10 rounded-full bg-pastel-lila text-light-on-primary-container inline-flex items-center justify-center">
+                  <span class="material-symbols-outlined text-[20px]" aria-hidden="true">checkroom</span>
+                </span>
+                <h2 id="ropa-title" class="font-headline text-headline-md text-light-on-surface" data-design-text-token="headline-md">Medidas para ropa</h2>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-pastel-rosa text-light-on-surface font-label text-label-sm" data-design-text-token="label-sm">En centímetros (cm)</span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <label class="flex flex-col gap-1.5">
+                <span class="font-label text-label-lg text-light-on-surface" data-design-text-token="label-lg">Contorno de pecho (cm)</span>
+                <input type="number" value="96" class="min-h-[44px] rounded-md bg-light-surface-container-low border border-light-outline-variant px-4 font-mono text-mono-md text-light-on-surface tabular-nums focus:border-light-primary focus:ring-0">
+              </label>
+              <label class="flex flex-col gap-1.5">
+                <span class="font-label text-label-lg text-light-on-surface" data-design-text-token="label-lg">Cintura (cm)</span>
+                <input type="number" value="82" class="min-h-[44px] rounded-md bg-light-surface-container-low border border-light-outline-variant px-4 font-mono text-mono-md text-light-on-surface tabular-nums focus:border-light-primary focus:ring-0">
+              </label>
+              <label class="flex flex-col gap-1.5">
+                <span class="font-label text-label-lg text-light-on-surface" data-design-text-token="label-lg">Cadera (cm)</span>
+                <input type="number" value="98" class="min-h-[44px] rounded-md bg-light-surface-container-low border border-light-outline-variant px-4 font-mono text-mono-md text-light-on-surface tabular-nums focus:border-light-primary focus:ring-0">
+              </label>
+              <label class="flex flex-col gap-1.5">
+                <span class="font-label text-label-lg text-light-on-surface" data-design-text-token="label-lg">Largo de piernas (cm)</span>
+                <input type="number" value="102" class="min-h-[44px] rounded-md bg-light-surface-container-low border border-light-outline-variant px-4 font-mono text-mono-md text-light-on-surface tabular-nums focus:border-light-primary focus:ring-0">
+              </label>
+              <label class="flex flex-col gap-1.5">
+                <span class="font-label text-label-lg text-light-on-surface" data-design-text-token="label-lg">Largo de brazos (cm)</span>
+                <input type="number" value="62" class="min-h-[44px] rounded-md bg-light-surface-container-low border border-light-outline-variant px-4 font-mono text-mono-md text-light-on-surface tabular-nums focus:border-light-primary focus:ring-0">
+              </label>
+              <label class="flex flex-col gap-1.5">
+                <span class="font-label text-label-lg text-light-on-surface" data-design-text-token="label-lg">Talla habitual de ropa</span>
+                <select class="min-h-[44px] rounded-md bg-light-surface-container-low border border-light-outline-variant px-4 font-body text-body-lg text-light-on-surface focus:border-light-primary focus:ring-0">
+                  <option>XS</option>
+                  <option>S</option>
+                  <option selected>M (Mediana)</option>
+                  <option>L</option>
+                  <option>XL</option>
+                </select>
+              </label>
+            </div>
+          </section>
+
+          <!-- Calzado Section -->
+          <section aria-labelledby="calzado-title" class="rounded-xl bg-light-surface-container-lowest border border-light-outline-variant p-6 shadow-sm flex flex-col gap-5">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2.5">
+                <span class="w-10 h-10 rounded-full bg-pastel-menta text-light-on-secondary-container inline-flex items-center justify-center">
+                  <span class="material-symbols-outlined text-[20px]" aria-hidden="true">steps</span>
+                </span>
+                <h2 id="calzado-title" class="font-headline text-headline-md text-light-on-surface" data-design-text-token="headline-md">Medidas para calzado</h2>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-pastel-menta text-light-on-secondary-container font-label text-label-sm" data-design-text-token="label-sm">US · EU · UK</span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <label class="flex flex-col gap-1.5">
+                <span class="font-label text-label-lg text-light-on-surface" data-design-text-token="label-lg">Longitud del pie (cm)</span>
+                <input id="foot-cm" type="number" step="0.5" value="26.0" class="min-h-[44px] rounded-md bg-light-surface-container-low border border-light-outline-variant px-4 font-mono text-mono-md text-light-on-surface tabular-nums focus:border-light-primary focus:ring-0">
+              </label>
+              <label class="flex flex-col gap-1.5">
+                <span class="font-label text-label-lg text-light-on-surface" data-design-text-token="label-lg">Ancho del pie</span>
+                <select class="min-h-[44px] rounded-md bg-light-surface-container-low border border-light-outline-variant px-4 font-body text-body-lg text-light-on-surface focus:border-light-primary focus:ring-0">
+                  <option>Estrecho</option>
+                  <option selected>Estándar</option>
+                  <option>Ancho (Mayor comodidad)</option>
+                </select>
+              </label>
+              <label class="flex flex-col gap-1.5">
+                <span class="font-label text-label-lg text-light-on-surface" data-design-text-token="label-lg">Talla habitual</span>
+                <input type="text" value="41 EU" class="min-h-[44px] rounded-md bg-light-surface-container-low border border-light-outline-variant px-4 font-mono text-mono-md text-light-on-surface tabular-nums focus:border-light-primary focus:ring-0">
+              </label>
+              <label class="flex flex-col gap-1.5">
+                <span class="font-label text-label-lg text-light-on-surface" data-design-text-token="label-lg">Sistema de tallas preferido</span>
+                <select class="min-h-[44px] rounded-md bg-light-surface-container-low border border-light-outline-variant px-4 font-body text-body-lg text-light-on-surface focus:border-light-primary focus:ring-0">
+                  <option selected>EU (Europa)</option>
+                  <option>US (Estados Unidos)</option>
+                  <option>UK (Reino Unido)</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="flex flex-wrap items-center justify-between gap-4 pt-2">
+              <!-- COMPONENT: button-primary -->
+              <button data-component-id="button-primary" data-component-type="button" data-component-variant="primary" type="submit" class="min-h-[44px] px-6 py-2.5 rounded-full bg-light-primary text-light-on-primary hover:bg-morado-tecnologico font-label text-label-lg inline-flex items-center gap-2 cursor-pointer">
+                <span class="material-symbols-outlined text-[20px]" aria-hidden="true">save</span>
+                <span data-design-text-token="label-lg">Guardar mis medidas</span>
+              </button>
+              <span id="save-feedback" class="font-label text-label-sm text-success hidden" data-design-text-token="label-sm">Medidas guardadas para LUMI</span>
+            </div>
+          </section>
+        </form>
+
+        <!-- Right 5 cols: Interactive Size Converter + Orientation Disclaimer -->
+        <aside aria-label="Conversor de tallas y advertencia" class="lg:col-span-5 flex flex-col gap-6">
+          <!-- Interactive US / EU / UK Converter -->
+          <section class="rounded-xl bg-pastel-menta/30 border-2 border-pastel-menta p-6 flex flex-col gap-5">
+            <div class="flex items-center justify-between">
+              <h2 class="font-headline text-headline-md text-light-on-surface" data-design-text-token="headline-md">Conversor de tallas</h2>
+              <span class="material-symbols-outlined text-[24px] text-light-secondary" aria-hidden="true">swap_horiz</span>
+            </div>
+            <p class="font-body text-body-md text-light-on-surface-variant text-pretty" data-design-text-token="body-md">
+              Elige una talla en cualquier sistema para ver al instante su equivalencia aproximada en calzado:
+            </p>
+
+            <label class="flex flex-col gap-1.5">
+              <span class="font-label text-label-lg text-light-on-surface" data-design-text-token="label-lg">Selecciona tu talla base (EU)</span>
+              <select id="converter-eu" class="min-h-[44px] rounded-md bg-light-surface-container-lowest border border-light-outline-variant px-4 font-mono text-mono-md text-light-on-surface tabular-nums focus:border-light-primary focus:ring-0">
+                <option value="38">38 EU (24.0 cm)</option>
+                <option value="39">39 EU (24.5 cm)</option>
+                <option value="40">40 EU (25.5 cm)</option>
+                <option value="41" selected>41 EU (26.0 cm)</option>
+                <option value="42">42 EU (27.0 cm)</option>
+                <option value="43">43 EU (27.5 cm)</option>
+                <option value="44">44 EU (28.5 cm)</option>
+              </select>
+            </label>
+
+            <div class="grid grid-cols-3 gap-3">
+              <div class="rounded-lg bg-light-surface-container-lowest border border-light-outline-variant p-4 flex flex-col items-center gap-1">
+                <span class="font-label text-label-sm text-light-on-surface-variant" data-design-text-token="label-sm">EU</span>
+                <span id="out-eu" class="font-mono text-title-lg text-light-primary tabular-nums" data-design-text-token="title-lg">41</span>
+              </div>
+              <div class="rounded-lg bg-light-surface-container-lowest border border-light-outline-variant p-4 flex flex-col items-center gap-1">
+                <span class="font-label text-label-sm text-light-on-surface-variant" data-design-text-token="label-sm">US</span>
+                <span id="out-us" class="font-mono text-title-lg text-light-on-surface tabular-nums" data-design-text-token="title-lg">8.5</span>
+              </div>
+              <div class="rounded-lg bg-light-surface-container-lowest border border-light-outline-variant p-4 flex flex-col items-center gap-1">
+                <span class="font-label text-label-sm text-light-on-surface-variant" data-design-text-token="label-sm">UK</span>
+                <span id="out-uk" class="font-mono text-title-lg text-light-on-surface tabular-nums" data-design-text-token="title-lg">7.5</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- Required Disclaimer Card -->
+          <div class="rounded-xl bg-pastel-amarillo/55 border border-light-outline-variant p-5 flex items-start gap-3">
+            <span class="material-symbols-outlined text-[24px] text-light-on-tertiary-container shrink-0" aria-hidden="true">info</span>
+            <div class="flex flex-col gap-1">
+              <h3 class="font-title text-title-md text-light-on-tertiary-container" data-design-text-token="title-md">Aviso sobre tallas</h3>
+              <p class="font-body text-body-md text-light-on-tertiary-container text-pretty" data-design-text-token="body-md">
+                Las tallas pueden variar según la marca y el diseño de cada fabricante. Las recomendaciones y conversiones de LUMI son orientativas.
+              </p>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+    </main>
+
+    <!-- Shared Footer (Shell Parity with Inicio) -->
+    <footer class="bg-light-surface-container-low border-t border-light-outline-variant mt-auto">
+      <div class="max-w-[1280px] mx-auto px-6 py-6 flex flex-wrap items-center justify-between gap-4">
+        <div class="flex flex-col gap-0.5">
+          <span class="font-title text-title-md text-light-on-surface" data-design-text-token="title-md">SUGERENCIAS · Sugerencias AI</span>
+          <span class="font-body text-body-md text-light-on-surface-variant" data-design-text-token="body-md">No compras solo, compras acompañado.</span>
+        </div>
+        <div class="flex flex-wrap items-center gap-4">
+          <span class="font-label text-label-sm text-light-on-surface-variant inline-flex items-center gap-1.5" data-design-text-token="label-sm">
+            <span class="material-symbols-outlined text-[18px] text-light-secondary" aria-hidden="true">accessibility_new</span>
+            Navegación por teclado y voz activa
+          </span>
+          <span class="font-label text-label-sm text-light-on-surface-variant" data-design-text-token="label-sm">Las tallas y recomendaciones son orientativas según cada marca.</span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    const table = {
+      '38': { us: '6.0', uk: '5.0' },
+      '39': { us: '7.0', uk: '6.0' },
+      '40': { us: '7.5', uk: '6.5' },
+      '41': { us: '8.5', uk: '7.5' },
+      '42': { us: '9.0', uk: '8.0' },
+      '43': { us: '10.0', uk: '9.0' },
+      '44': { us: '10.5', uk: '9.5' }
+    };
+    const euSelect = document.getElementById('converter-eu');
+    if (euSelect) {
+      euSelect.addEventListener('change', () => {
+        const val = euSelect.value;
+        const row = table[val] || { us: '8.5', uk: '7.5' };
+        document.getElementById('out-eu').textContent = val;
+        document.getElementById('out-us').textContent = row.us;
+        document.getElementById('out-uk').textContent = row.uk;
+      });
+    }
+    const form = document.getElementById('medidas-form');
+    const feedback = document.getElementById('save-feedback');
+    if (form && feedback) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        feedback.classList.remove('hidden');
+      });
+    }
+  </script>
+
+
+</body></html>

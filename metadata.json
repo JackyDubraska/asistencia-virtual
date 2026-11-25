@@ -1,0 +1,6 @@
+{
+  "name": "SUGERENCIAS — Asistente de Compras LUMI",
+  "description": "Compañero inteligente de compras accesible con asistente virtual holográfico LUMI, comparador claro, conversor de tallas y soporte por voz.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

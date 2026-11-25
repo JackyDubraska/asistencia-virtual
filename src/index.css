@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pastel-lila: #FFEDD5;
+  --color-pastel-menta: #CCFBF1;
+  --color-pastel-durazno: #FED7AA;
+  --color-pastel-amarillo: #FEF3C7;
+  --color-pastel-rosa: #E8EEF6;
+  --color-morado-tecnologico: #9A3412;
+  --color-turquesa-confianza: #0F766E;
+  --color-naranja: #EA580C;
+  --color-blanco-lavanda: #FAF9F7;
+  --color-success: #0F766E;
+  --color-warning: #92400E;
+
+  --color-light-primary: #C2410C;
+  --color-light-on-primary: #FFFFFF;
+  --color-light-primary-container: #FFEDD5;
+  --color-light-on-primary-container: #431407;
+  --color-light-secondary: #0F766E;
+  --color-light-on-secondary: #FFFFFF;
+  --color-light-secondary-container: #CCFBF1;
+  --color-light-on-secondary-container: #042F2E;
+  --color-light-tertiary: #92400E;
+  --color-light-on-tertiary: #FFFFFF;
+  --color-light-tertiary-container: #FEF3C7;
+  --color-light-on-tertiary-container: #451A03;
+  --color-light-error: #BA1A1A;
+  --color-light-on-error: #FFFFFF;
+  --color-light-error-container: #FFDAD6;
+  --color-light-on-error-container: #410002;
+  --color-light-background: #FAF9F7;
+  --color-light-on-background: #1C1B1A;
+  --color-light-surface: #FAF9F7;
+  --color-light-surface-dim: #E8E5E1;
+  --color-light-surface-bright: #FFFFFF;
+  --color-light-surface-container-lowest: #FFFFFF;
+  --color-light-surface-container-low: #F4F2EE;
+  --color-light-surface-container: #EDF6F4;
+  --color-light-surface-container-high: #F9F3E8;
+  --color-light-surface-container-highest: #FFF7ED;
+  --color-light-on-surface: #1C1B1A;
+  --color-light-surface-variant: #FFEDD5;
+  --color-light-on-surface-variant: #504D4A;
+  --color-light-outline: #7A7672;
+  --color-light-outline-variant: #E2E0DD;
+  --color-light-inverse-surface: #31302E;
+  --color-light-inverse-on-surface: #F4F2EE;
+  --color-light-inverse-primary: #FDBA74;
+
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-headline: "Plus Jakarta Sans", sans-serif;
+  --font-title: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Rubik", sans-serif;
+  --font-label: "Rubik", sans-serif;
+  --font-mono: "Spline Sans Mono", monospace;
+
+  --text-display-lg: 44px;
+  --text-display-lg--line-height: 52px;
+  --text-display-lg--letter-spacing: -0.75px;
+  --text-display-lg--font-weight: 800;
+
+  --text-display-lg-mobile: 30px;
+  --text-display-lg-mobile--line-height: 38px;
+  --text-display-lg-mobile--letter-spacing: -0.5px;
+  --text-display-lg-mobile--font-weight: 800;
+
+  --text-headline-lg: 32px;
+  --text-headline-lg--line-height: 40px;
+  --text-headline-lg--letter-spacing: -0.25px;
+  --text-headline-lg--font-weight: 700;
+
+  --text-headline-md: 24px;
+  --text-headline-md--line-height: 32px;
+  --text-headline-md--letter-spacing: -0.15px;
+  --text-headline-md--font-weight: 700;
+
+  --text-title-lg: 20px;
+  --text-title-lg--line-height: 28px;
+  --text-title-lg--letter-spacing: 0px;
+  --text-title-lg--font-weight: 600;
+
+  --text-title-md: 16px;
+  --text-title-md--line-height: 24px;
+  --text-title-md--letter-spacing: 0.1px;
+  --text-title-md--font-weight: 600;
+
+  --text-body-lg: 16px;
+  --text-body-lg--line-height: 24px;
+  --text-body-lg--letter-spacing: 0.1px;
+  --text-body-lg--font-weight: 400;
+
+  --text-body-md: 14px;
+  --text-body-md--line-height: 21px;
+  --text-body-md--letter-spacing: 0.15px;
+  --text-body-md--font-weight: 400;
+
+  --text-label-lg: 14px;
+  --text-label-lg--line-height: 20px;
+  --text-label-lg--letter-spacing: 0.1px;
+  --text-label-lg--font-weight: 500;
+
+  --text-label-sm: 12px;
+  --text-label-sm--line-height: 16px;
+  --text-label-sm--letter-spacing: 0.2px;
+  --text-label-sm--font-weight: 500;
+
+  --text-mono-md: 14px;
+  --text-mono-md--line-height: 20px;
+  --text-mono-md--letter-spacing: 0px;
+  --text-mono-md--font-weight: 500;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  --transition-duration-state-change: 150ms;
+  --transition-timing-function-state-change: ease-out;
+}
+
+.material-symbols-outlined {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1 !important;
+  box-sizing: content-box;
+  overflow: hidden;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: middle;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.material-symbols-filled {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+@keyframes holoFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes holoRing {
+  0%, 100% { opacity: 0.55; transform: scale(0.97); }
+  50% { opacity: 0.95; transform: scale(1.03); }
+}
+
+@keyframes holoExcitedBounce {
+  0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
+  25% { transform: translateY(-10px) rotate(-2deg) scale(1.03); }
+  50% { transform: translateY(-3px) rotate(2deg) scale(1.01); }
+  75% { transform: translateY(-8px) rotate(-1.5deg) scale(1.03); }
+}
+
+.holo-body {
+  animation: holoFloat 3.4s ease-in-out infinite;
+}
+
+.holo-ring {
+  animation: holoRing 2.6s ease-in-out infinite;
+}
+
+.holo-excited .holo-body {
+  animation: holoExcitedBounce 0.9s ease-in-out infinite;
+}
+
+.holo-excited .holo-ring {
+  animation-duration: 0.9s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .holo-body,
+  .holo-ring,
+  .holo-excited .holo-body,
+  .holo-excited .holo-ring {
+    animation: none !important;
+  }
+}
